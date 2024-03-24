@@ -9,13 +9,16 @@ body {
     left: 0;
     width: 100%;
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    transition: top 0.3s; /* Add transition for smooth animation */
+}
+
+.hidden {
+    top: -60px; /* Move the top bar out of the viewport */
 }
 
 .left-section, .center-section, .right-section {
@@ -68,6 +71,11 @@ body {
     display: block;
 }
 
+.center-section {
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+}
+
 .upload-button, .sign-in-button {
     background: none;
     border: none;
@@ -91,6 +99,7 @@ body {
     color: white;
     padding: 50px 0;
     margin-top: 30px;
+    margin-bottom: 200px;
 }
 
 .hero .container {
@@ -111,6 +120,7 @@ body {
 .hero img {
     max-width: 600px;
     height: auto;
+    margin-bottom: 200px;
 }
 
 .navigation {
@@ -147,7 +157,7 @@ body {
 .content-container {
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -197,4 +207,412 @@ body {
 
 .read-more-button:hover {
     background-color: #0056b3;
+}
+
+.content-container1 {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+.image-container1 {
+    flex: 0 0 auto;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.image-container1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container1 {
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container1 h3 {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.text-container1 p {
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+}
+
+.read-more-button1 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-button1:hover {
+    background-color: #0056b3;
+}
+
+
+
+.gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-wrapper {
+    text-align: center;
+}
+
+.content-wrapper img {
+    margin-top: 30px;
+}
+
+
+
+
+.content-wrapper1 {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    max-width: 1000px; /* Limit the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.image-container1 {
+    flex: 0 0 50%; /* Take up 50% of the width */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.image-container1 img {
+    display: block;
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto;
+}
+
+.text-container1 {
+    flex: 0 0 50%; /* Take up 50% of the width */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.text-container1 h2 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.text-container1 p {
+    margin-bottom: 20px; /* Add some bottom margin to separate paragraphs */
+}
+
+.read-more-button1 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-button1:hover {
+    background-color: #0056b3;
+}
+
+
+.next-section {
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Example background color */
+    text-align: center;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.logo {
+    text-align: center;
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
+
+.logo:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.testimonials-section .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-section h1 {
+    margin-bottom: 30px; /* Adjust spacing between heading and testimonials */
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.testimonial-details {
+    text-align: left;
+}
+
+.testimonial-details h2 {
+    margin-top: 0;
+}
+
+.testimonial-details p {
+    margin-bottom: 10px;
+}
+
+.testimonial-details p strong {
+    font-weight: bold;
+}
+
+
+
+.color-ball {
+    display: inline-block;
+    margin-top: 40px;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-left: 5px; /* Adjust spacing between text and ball */
+    float: right; /* Float the balls to the right */
+}
+
+.blue {
+    background-color: #6dbfce; /* Metallic blue color */
+}
+
+.matalic {
+    background-color: #808080; /* Gray color */
+}
+
+
+/* contact style */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+}
+
+.contact-form {
+    flex: 0 0 40%; /* Adjust width of form */
+    text-align: left;
+    margin-left: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 22px); /* Adjust width of inputs */
+    padding: 10px;
+    border-radius: 0; /* Remove border-radius */
+    border: none; /* Remove border */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    background-color: transparent; /* Transparent background */
+    outline: none; /* Remove default focus outline */
+}
+
+.form-group textarea {
+    resize: none; /* Disable textarea resizing */
+}
+
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+}
+
+/* Hover effect */
+.send-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.contact-image {
+    flex: 0 0 50%; /* Adjust width of image */
+    text-align: center; /* Center the image */
+    margin-right: 50px;
+}
+
+.contact-image img {
+    max-width: 80%; /* Make the image larger */
+    height: auto;
+}
+
+.contact-form hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* footer style */
+footer {
+    background-color: #2b2a2a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    color: white;
+}
+
+.footer-content .footer-heading {
+    color: white; /* Change the color as needed */
+}
+
+.footer-content p {
+    color: white; /* Change the color as needed */
+}
+
+.underline {
+    width: 400px;
+    height: 2px;
+    background-color: rgb(104, 89, 48); /* Adjust underline color */
+    margin: 0 auto 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 0 0 23%; /* Adjust width of each section */
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block; /* Ensure the icon is displayed as a block element */
+    margin-right: 15px; /* Add some space between each icon */
+    color: blue; /* Adjust social media icon color */
+    font-size: 24px; /* Increase icon size */
+    width: 40px; /* Set width and height to create a round circle */
+    height: 40px; /* Set width and height to create a round circle */
+    line-height: 40px; /* Center the icon vertically */
+    text-align: center; /* Center the icon horizontally */
+    border-radius: 50%; /* Create a round circle */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background color */
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+/* Hover effect */
+.social-media a:hover {
+    transform: scale(1.2); /* Scale the icon on hover */
+    background-color: rgba(255, 255, 255, 0.5); /* Darken the background color on hover */
+}
+
+.copywrite {
+    background-color: blue;
+    color: white; /* Set text color to contrast with the background */
+    padding: 20px; /* Add padding for spacing */
+    margin: 0; /* Remove margin on all sides */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.copywrite a {
+    color: black;
+    font-weight: bold;
+    
 }
