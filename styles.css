@@ -616,3 +616,47 @@ hr {
     font-weight: bold;
     
 }
+
+/* Add responsive CSS here */
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .top-bar {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .content-container,
+    .content-container1 {
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-container,
+    .image-container1 {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .text-container,
+    .text-container1 {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .contact-form {
+        flex: 1; /* Take full width */
+        margin-left: 0;
+        margin-right: 20px; /* Add margin to right */
+    }
+
+    .contact-image {
+        display: none; /* Hide contact image on small screens */
+    }
+
+    .footer-section {
+        flex: 0 0 100%; /* Full width for footer sections */
+        margin-bottom: 30px; /* Add space between sections */
+    }
+}
+
+/* End of responsive CSS */
